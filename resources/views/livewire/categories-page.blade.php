@@ -1,7 +1,3 @@
-
-
- <main>
- @livewire('partials.header')
 <div class="bg-orange-200 py-20">
   <div class="max-w-xl mx-auto">
     <div class="text-center ">
@@ -112,5 +108,3 @@
   </div>
 
 </div>
- @livewire('partials.footer')
- </main>

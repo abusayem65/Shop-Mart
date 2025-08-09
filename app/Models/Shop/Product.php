@@ -49,4 +49,14 @@ class Product extends Model implements HasMedia
     {
         return $this->morphMany(Comment::class, 'commentable');
     }
+    /**
+     * Get the URL of the first product image or a default image.
+     *
+     * @return string
+     */
+    public function getImageUrlAttribute(): string
+    {
+        // Use the correct collection name as used in your Filament resource (likely 'product-images')
+        return $this->getFirstMediaUrl('product-images') ?: asset('images/default-product.png');
+    }
 }

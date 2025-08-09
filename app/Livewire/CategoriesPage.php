@@ -8,6 +8,6 @@ class CategoriesPage extends Component
 {
     public function render()
     {
-        return view('livewire.categories-page');
+        return view('livewire.categories-page')->layout('layouts.app');
     }
 }

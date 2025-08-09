@@ -8,6 +8,6 @@ class SuccessPage extends Component
 {
     public function render()
     {
-        return view('livewire.success-page');
+        return view('livewire.success-page')->layout('layouts.app');
     }
 }

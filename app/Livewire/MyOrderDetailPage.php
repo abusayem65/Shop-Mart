@@ -8,6 +8,6 @@ class MyOrderDetailPage extends Component
 {
     public function render()
     {
-        return view('livewire.my-order-detail-page');
+        return view('livewire.my-order-detail-page')->layout('layouts.app');
     }
 }
