@@ -20,6 +20,12 @@ Install PHP dependencies:
 composer install
 ```
 
+for windows environment
+```sh
+composer install --ignore-platform-reqs
+```
+
+
 Setup configuration:
 
 ```sh
@@ -50,8 +56,8 @@ Run database seeder:
 php artisan db:seed
 ```
 
-> **Note**  
-> If you get an "Invalid datetime format (1292)" error, this is probably related to the timezone setting of your database.  
+> **Note**
+> If you get an "Invalid datetime format (1292)" error, this is probably related to the timezone setting of your database.
 > Please see https://dba.stackexchange.com/questions/234270/incorrect-datetime-value-mysql
 
 
